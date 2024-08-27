@@ -12,15 +12,15 @@
             <header>
                 <img src="/assets/logo.svg" alt="Logo Alura" />
             </header>
-            <textarea placeholder="Digite seu texto"></textarea>
+            <textarea id="text" placeholder="Digite seu texto"></textarea>
             <div>
                 <div class="warning-container">
                     <img src="/assets/excalmation-fill.svg" alt="!" />
                     <span>Apenas letras minúsculas e sem acento.</span>
                 </div>
                 <div class="buttons-container">
-                    <button id="encrypt" class="primary-button">Criptografar</button>
-                    <button id="decrypt" class="secundary-button">Descriptografar</button>
+                    <button onclick="encrypt()" id="encrypt" class="primary-button">Criptografar</button>
+                    <button onclick="decrypt()" id="decrypt" class="secundary-button">Descriptografar</button>
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
             </div>
             <div class="result-area">
                 <p class="result-text"></p>
-                <button class="secundary-button">Copiar</button>
+                <button onclick="copy()" class="secundary-button">Copiar</button>
             </div>
         </div>
     </main>

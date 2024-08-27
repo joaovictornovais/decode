@@ -137,8 +137,9 @@ button {
     display: none;
 }
 
-.result-text {
-    display: none;
+.result-area p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
