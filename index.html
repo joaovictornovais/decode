@@ -13,26 +13,30 @@
                 <img src="/assets/logo.svg" alt="Logo Alura" />
             </header>
             <div class="decode">
-                <textarea placeholder="Digite seu texto"></textarea>
+                <textarea id="text" placeholder="Digite seu texto"></textarea>
                 <div class="buttons-area">
                     <div class="warning">
                         <img src="/assets/excalmation-fill.svg" alt="!" />
                         <span>Apenas letras minúsculas e sem acento.</span>
                     </div>
                     <div>
-                        <button id="encrypt" class="primary-button">Criptografar</button>
-                        <button id="decrypt" class="secundary-button">Descriptografar</button>
+                        <button id="encrypt" onclick="encrypt()" class="primary-button">Criptografar</button>
+                        <button id="decrypt" onclick="decrypt()" class="secundary-button">Descriptografar</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="result">
-            <img src="/assets/no-messages-found.svg" alt="Nenhuma mensagem encontrada" />
-            <div class="result-message">
-                <h2>Nenhuma mensagem encontrada</h2>
-                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <div class="no-messages-found">
+                    <img src="/assets/no-messages-found.svg" alt="Nenhuma mensagem encontrada" />
+                <div class="result-message">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
             </div>
+            <p id="text-result">SEU RESULTADO</p>
         </div>
     </main>
+    <script src="/script.js"></script>
 </body>
 </html>
