@@ -8,33 +8,31 @@
 </head> 
 <body>
     <main>
-        <div class="type">
+        <div class="input-area">
             <header>
                 <img src="/assets/logo.svg" alt="Logo Alura" />
             </header>
-            <div class="decode">
-                <textarea id="text" placeholder="Digite seu texto"></textarea>
-                <div class="buttons-area">
-                    <div class="warning">
-                        <img src="/assets/excalmation-fill.svg" alt="!" />
-                        <span>Apenas letras minúsculas e sem acento.</span>
-                    </div>
-                    <div>
-                        <button id="encrypt" onclick="encrypt()" class="primary-button">Criptografar</button>
-                        <button id="decrypt" onclick="decrypt()" class="secundary-button">Descriptografar</button>
-                    </div>
+            <textarea placeholder="Digite seu texto"></textarea>
+            <div>
+                <div class="warning-container">
+                    <img src="/assets/excalmation-fill.svg" alt="!" />
+                    <span>Apenas letras minúsculas e sem acento.</span>
+                </div>
+                <div class="buttons-container">
+                    <button id="encrypt" class="primary-button">Criptografar</button>
+                    <button id="decrypt" class="secundary-button">Descriptografar</button>
                 </div>
             </div>
         </div>
         <div class="result">
-            <div class="no-messages-found">
-                    <img src="/assets/no-messages-found.svg" alt="Nenhuma mensagem encontrada" />
-                <div class="result-message">
-                    <h2>Nenhuma mensagem encontrada</h2>
-                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-                </div>
+            <div class="no-messages">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
-            <p id="text-result">SEU RESULTADO</p>
+            <div class="result-area">
+                <p class="result-text"></p>
+                <button class="secundary-button">Copiar</button>
+            </div>
         </div>
     </main>
     <script src="/script.js"></script>
