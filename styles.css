@@ -148,3 +148,15 @@ button {
         flex-direction: row;
     }
 }
+
+@media (min-width: 1024px) {
+    main {
+        flex-direction: row;
+    }
+    .result {
+        min-width: 400px;
+    }
+    .input-area {
+        width: 100%;
+    }
+}
